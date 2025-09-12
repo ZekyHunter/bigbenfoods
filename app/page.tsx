@@ -1,16 +1,32 @@
-import Container from "@/components/layout/Container";
+import Hero from "../components/home/hero";
+import FeatureRow from "../components/home/FeatureRow";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen grid place-items-center bg-neutral-950">
-      <Container>
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-red-500">
-            Hello Big Ben Foods
-          </h1>
-          <p className="mt-2 text-neutral-300">Tailwind test</p>
-        </div>
-      </Container>
+    <main>
+      <Hero />
+
+      <FeatureRow
+        image="/img/food.jpg"
+        title="Lorem ipsum header"
+        textLeft="Lorem ipsum dolor sit amet consectetur. Vestibulum vulputate posuere gravida, sed posuere dui. Phasellus varius eget turpis et pretium."
+        textRight="Lorem ipsum dolor sit amet consectetur. Aenean non magna in nibh venenatis porttitor at id. Morbi a nisi neque. Sed posuere dapibus at malesuada. Praesent non sem et ex feugiat vulputate. Aenean hendrerit felis a fringilla lacinia. Nunc id arcu, donec ultrices scelerisque quis nulla massa consequat amet."
+      />
+
+      <FeatureRow
+        reverse
+        image="/img/food.jpg"
+        title="Lorem ipsum header"
+        textLeft="Lorem ipsum dolor sit amet consectetur. Vestibulum vulputate posuere gravida, sed posuere dui. Phasellus varius eget turpis et pretium."
+        textRight="Lorem ipsum dolor sit amet consectetur. Aenean non magna in nibh venenatis porttitor at id. Morbi a nisi neque. Sed posuere dapibus at malesuada. Praesent non sem et ex feugiat vulputate. Aenean hendrerit felis a fringilla lacinia. Nunc id arcu, donec ultrices scelerisque quis nulla massa consequat amet."
+      />
+
+      <FeatureRow
+        image="/img/food.jpg"
+        title="Lorem ipsum header"
+        textLeft="Lorem ipsum dolor sit amet consectetur. Vestibulum vulputate posuere gravida, sed posuere dui. Phasellus varius eget turpis et pretium."
+        textRight="Lorem ipsum dolor sit amet consectetur. Aenean non magna in nibh venenatis porttitor at id. Morbi a nisi neque. Sed posuere dapibus at malesuada. Praesent non sem et ex feugiat vulputate. Aenean hendrerit felis a fringilla lacinia. Nunc id arcu, donec ultrices scelerisque quis nulla massa consequat amet."
+      />
     </main>
   );
 }
