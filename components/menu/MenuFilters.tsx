@@ -3,13 +3,23 @@ import { useState } from "react";
 import Tag from "../ui/Tag";
 import { ALL_TAGS } from "../../data/menu";
 
-export default function MenuFilters({ onChange }:{ onChange:(tags:string[])=>void }) {
+export default function MenuFilters({
+  onChange,
+}: {
+  onChange: (tags: string[]) => void;
+}) {
   const [active, setActive] = useState<string[]>(["sushi"]);
 
   const toggle = (t: string) => {
-    const next = active.includes(t) ? active.filter(x => x !== t) : [...active, t];
-    setActive(next);
-    onChange(next);
+    // Pokud je tag již aktivní, odklikneme ho (nastavíme prázdný výběr)
+    if (active.includes(t)) {
+      setActive([]);
+      onChange([]);
+    } else {
+      // jinak vybereme jen tento tag (jediný aktivní)
+      setActive([t]);
+      onChange([t]);
+    }
   };
 
   return (

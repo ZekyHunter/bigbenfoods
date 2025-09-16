@@ -4,16 +4,26 @@ import Container from "../layout/Container";
 type Props = {
   image: string;
   title: string;
-  textLeft: string;   // kratší červený odstavec nahoře
-  textRight: string;  // delší text
-  reverse?: boolean;  // prohození obrázku/textu
+  textLeft: string; // kratší červený odstavec nahoře
+  textRight: string; // delší text
+  reverse?: boolean; // prohození obrázku/textu
 };
 
-export default function FeatureRow({ image, title, textLeft, textRight, reverse }: Props) {
+export default function FeatureRow({
+  image,
+  title,
+  textLeft,
+  textRight,
+  reverse,
+}: Props) {
   return (
-    <section className="border-b border-red-900 py-10">
+    <section className=" py-10">
       <Container>
-        <div className={`grid items-start gap-8 md:grid-cols-2 ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}>
+        <div
+          className={`grid items-start gap-8 md:grid-cols-2 ${
+            reverse ? "md:[&>*:first-child]:order-2" : ""
+          }`}
+        >
           {/* Obrázek */}
           <div className="relative aspect-[4/3] border border-neutral-800">
             <Image src={image} alt={title} fill className="object-cover" />

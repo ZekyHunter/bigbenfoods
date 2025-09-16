@@ -16,8 +16,8 @@ export function Header() {
             <Link href="/contact">CONTACT</Link>
           </nav>
           <Link
-            href="/contact#reservation"
-            className="rounded-full border border-red-600 px-4 py-2 text-sm hover:bg-red-700/20"
+            href="/reservation"
+            className="rounded-full border border-red-600 px-4 py-2 text-sm hover:bg-red-700/20 bg-red-600"
           >
             RESERVATION
           </Link>

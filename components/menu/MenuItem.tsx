@@ -1,5 +1,11 @@
 import Image from "next/image";
 import type { MenuItem as T } from "../../data/menu";
+import { Playfair_Display } from "next/font/google";
+const playfair = Playfair_Display({
+  subsets: ["latin-ext"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export default function MenuItem({ item }: { item: T }) {
   return (
@@ -7,11 +13,18 @@ export default function MenuItem({ item }: { item: T }) {
       {/* text vlevo */}
       <div>
         {item.prefix && (
-          <a href="#" className="text-red-400 text-sm underline decoration-transparent hover:underline">
+          <a
+            href="#"
+            className="text-red-400 text-sm underline decoration-transparent hover:underline"
+          >
             {item.prefix}
           </a>
         )}
-        <h3 className="font-serif uppercase tracking-wide">{item.title}</h3>
+        <h3
+          className={`${playfair.className} font-serif uppercase tracking-wide`}
+        >
+          {item.title}
+        </h3>
 
         <div className="mt-1 text-[12px] text-neutral-400 leading-relaxed">
           {item.inside && <div>Inside: {item.inside}</div>}
