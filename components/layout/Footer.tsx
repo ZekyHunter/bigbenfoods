@@ -69,6 +69,21 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* Mapa dole pod textem */}
+        <div className="pb-10">
+          <div className="aspect-[21/9] border border-neutral-700">
+            <iframe
+              className="w-full h-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=14.4414,50.0718,14.4448,50.0743&layer=mapnik&marker=50.07305,14.4431"
+            />
+          </div>
+          <p className="mt-2 text-xs text-neutral-400">
+            Nitrianská 1625/22, Vinohrady, Praha 3, 130 00
+          </p>
+        </div>
       </Container>
     </footer>
   );

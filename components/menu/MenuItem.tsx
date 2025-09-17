@@ -26,7 +26,7 @@ export default function MenuItem({ item }: { item: T }) {
           {item.title}
         </h3>
 
-        <div className="mt-1 text-[12px] text-neutral-400 leading-relaxed">
+        <div className="mt-1 text-[14px] text-neutral-400 leading-relaxed">
           {item.inside && <div>Inside: {item.inside}</div>}
           {item.outside && <div>Outside: {item.outside}</div>}
         </div>

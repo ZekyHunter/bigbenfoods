@@ -4,10 +4,10 @@ import ReservationForm from "@/components/reservation/ReservationForm";
 export default function ReservationPage() {
   return (
     <Container>
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10 py-10">
         {/* Levý sloupec – info + formulář */}
         <div>
-          <h1 className="text-2xl font-semibold tracking-wide mb-4">
+          <h1 className="text-3xl font-serif tracking-wide mb-4">
             BIG BEN FOODS
           </h1>
 
