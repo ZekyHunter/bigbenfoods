@@ -8,10 +8,10 @@ export default function ContactPage() {
   return (
     <Container>
       <div className="py-10">
-        <h1 className="text-3xl md:text-4xl font-serif tracking-wide">
+        <h1 className="text-3xl md:text-2xl tracking-wide text-neutral-900 dark:text-neutral-300 font-lato mb-4">
           Kontakt
         </h1>
-        <p className="mt-3 text-neutral-300">
+        <p className="mt-3 text-neutral-700 dark:text-neutral-300 font-lato text-md">
           Ozvěte se nám nebo se rovnou zastavte – rádi vás uvidíme.
         </p>
       </div>
@@ -21,14 +21,16 @@ export default function ContactPage() {
         {/* Levý sloupec – kontakty */}
         <section className="space-y-6">
           <div>
-            <h2 className="text-xl font-serif tracking-wide">Big Ben Foods</h2>
-            <address className="not-italic mt-2 text-neutral-300 leading-6">
+            <h2 className="text-xl font-lato font-semibold tracking-wide text-neutral-900 dark:text-neutral-300">
+              Big Ben Foods
+            </h2>
+            <address className="not-italic mt-2 text-neutral-700 dark:text-neutral-300 font-lato leading-6 text-sm">
               Nitrianská 1625/22
               <br />
               Vinohrady, Praha 3, 130 00
             </address>
 
-            <ul className="mt-3 text-neutral-300 leading-7">
+            <ul className="mt-3 text-neutral-900 dark:text-neutral-300 font-lato text-sm leading-7">
               <li>
                 Tel:{" "}
                 <Link className="hover:text-red-400" href="tel:+420123456789">
@@ -47,8 +49,10 @@ export default function ContactPage() {
             </ul>
 
             <div className="mt-4">
-              <h3 className="font-semibold mb-1">Otevírací doba</h3>
-              <ul className="text-neutral-400 leading-6">
+              <h3 className="font-semibold mb-1 text-neutral-900 dark:text-neutral-300 font-lato">
+                Otevírací doba
+              </h3>
+              <ul className="text-neutral-700 dark:text-neutral-300 font-lato leading-6 text-sm">
                 <li>Po–St: 11:30–23:00</li>
                 <li>Čt–Pá: 11:30–24:00</li>
                 <li>So: 12:00–24:00</li>
@@ -59,25 +63,27 @@ export default function ContactPage() {
             <div className="mt-5 flex gap-3">
               <Link
                 href="/reservation"
-                className="rounded-full border border-red-600 bg-red-600/20 hover:bg-red-600/40 text-red-200 px-5 py-2 transition"
+                className="inline-block rounded-full border border-accent bg-accent text-white hover:bg-accent/90 px-4 py-2 text-sm font-bold"
               >
-                Rezervovat stůl
+                REZERVOVAT STŮL
               </Link>
               <Link
                 href="#form"
-                className="rounded-full border border-neutral-600 px-5 py-2 hover:bg-neutral-800 transition"
+                className="rounded-full border-2 border-neutral-600 px-4 py-2 hover:bg-neutral-200/50 transition text-sm font-bold"
               >
-                Napsat zprávu
+                NAPSAT ZPRÁVU
               </Link>
             </div>
 
             <div className="mt-6">
-              <h3 className="font-semibold mb-1">Sociální sítě</h3>
-              <div className="flex gap-4 text-neutral-300">
-                <Link href="#" className="hover:text-red-400">
+              <h3 className="font-semibold mb-1 text-neutral-900 dark:text-neutral-300 font-lato">
+                Social sites
+              </h3>
+              <div className="flex gap-4 text-neutral-700 dark:text-neutral-300 font-lato">
+                <Link href="#" className="hover:text-red-400 underline">
                   Instagram
                 </Link>
-                <Link href="#" className="hover:text-red-400">
+                <Link href="#" className="hover:text-red-400 underline">
                   Facebook
                 </Link>
               </div>

@@ -9,7 +9,7 @@ const playfair = Playfair_Display({
 
 export default function MenuItem({ item }: { item: T }) {
   return (
-    <article className="grid grid-cols-[1fr_auto] gap-6 py-6 border-b border-neutral-800">
+    <article className="grid grid-cols-[1fr_auto] gap-6 py-6 border-b border-neutral-800 font-lato">
       {/* text vlevo */}
       <div>
         {item.prefix && (
@@ -20,13 +20,11 @@ export default function MenuItem({ item }: { item: T }) {
             {item.prefix}
           </a>
         )}
-        <h3
-          className={`${playfair.className} font-serif uppercase tracking-wide`}
-        >
+        <h3 className="font-serif uppercase tracking-wide text-xl">
           {item.title}
         </h3>
 
-        <div className="mt-1 text-[14px] text-neutral-400 leading-relaxed">
+        <div className="mt-1 text-[14px] text-neutral-600 dark:text-neutral-300 font-lato leading-relaxed">
           {item.inside && <div>Inside: {item.inside}</div>}
           {item.outside && <div>Outside: {item.outside}</div>}
         </div>
@@ -43,10 +41,12 @@ export default function MenuItem({ item }: { item: T }) {
             className="rounded"
           />
         )}
-        <ul className="text-sm text-neutral-300 text-right min-w-[120px]">
+        <ul className="text-sm text-neutral-500 dark:text-neutral-300 font-lato text-right min-w-[120px]">
           {item.prices.map((p) => (
             <li key={p.variant} className="flex justify-end gap-3">
-              <span className="text-neutral-400">{p.variant}</span>
+              <span className="text-neutral-600 dark:text-neutral-300 font-lato">
+                {p.variant}
+              </span>
               <span>{p.czk} Kč</span>
             </li>
           ))}

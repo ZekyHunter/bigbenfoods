@@ -21,8 +21,8 @@ export default function MenuList() {
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16">
       {/* Nadpis + filtry */}
-      <section className="py-10 border-b-2 border-red-900">
-        <p className="text-3xl md:text-4xl font-serif tracking-wide text-neutral-300 mb-4">
+      <section className="py-10 border-b-2 border-red-700">
+        <p className="text-3xl md:text-2xl tracking-wide text-neutral-900 dark:text-neutral-300 font-lato mb-4">
           Menu
         </p>
         <MenuFilters onChange={setTags} />

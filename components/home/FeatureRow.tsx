@@ -31,15 +31,17 @@ export default function FeatureRow({
 
           {/* Text */}
           <div className="max-w-prose">
-            <p className="text-red-400 uppercase tracking-[.25em] text-[10px] md:text-xs">
+            <p className="text-red-400 uppercase tracking-[.25em] text-[10px] md:text-xs font-lato">
               Welcome at
             </p>
-            <h2 className="mt-2 text-xl md:text-2xl font-serif">{title}</h2>
+            <h2 className="mt-2 text-xl md:text-2xl font-playfair font-medium">
+              {title}
+            </h2>
 
-            <p className="mt-3 text-sm text-red-400 leading-relaxed">
+            <p className="mt-3 text-md text-red-400 leading-relaxed font-lato">
               {textLeft}
             </p>
-            <p className="mt-3 text-sm text-neutral-300 leading-relaxed">
+            <p className="mt-3 text-md text-neutral-900 dark:text-neutral-300 font-lato leading-relaxed">
               {textRight}
             </p>
           </div>

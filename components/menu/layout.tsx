@@ -11,6 +11,6 @@ export default function MenuLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Playfair se použije jen uvnitř /menu
+  // Playfair se použije uvnitř /menu
   return <section className={playfair.className}>{children}</section>;
 }

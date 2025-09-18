@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 
 export default function Hero() {
   return (
-    <section className="border-b-2 border-red-900 py-8 md:py-10">
+    <section className="border-b-2 border-red-700 py-8 md:py-10">
       <Container>
         <div className="mx-auto max-w-4xl">
           {/* Obrázek v rámečku s overlay textem */}
@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
 
           {/* popisek + link pod fotkou */}
-          <p className="mt-3 text-center text-sm text-neutral-400">
+          <p className="mt-3 text-center text-md text-neutral-900 dark:text-neutral-300 font-lato">
             Lorem ipsum dolor sit amet consectetur. Sezonní a svěží suroviny,
             poctivé chutě, menu s respektem k tradici. Dalsi text lorem ipsum
             atd...
@@ -36,7 +36,7 @@ export default function Hero() {
           <p className="mt-2 text-center">
             <a
               href="/menu"
-              className="inline-block text-red-400 hover:underline underline-offset-4"
+              className="inline-block text-red-400 underline underline-offset-4 hover:text-red-600"
             >
               See the Menu
             </a>

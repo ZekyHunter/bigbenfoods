@@ -37,7 +37,7 @@ export default function ReservationForm() {
     >
       <div className="flex gap-3">
         {/* Počet osob */}
-        <label className="flex-1 inline-flex items-center gap-2 border-2 border-gray-200 px-3 py-2">
+        <label className="flex-1 inline-flex items-center gap-2 border-2 border-gray-700 dark:border-gray-200 px-3 py-2">
           <span className="text-neutral-400">👥</span>
           <select
             name="people"
@@ -46,7 +46,11 @@ export default function ReservationForm() {
             aria-label="Počet osob"
           >
             {PEOPLE.map((n) => (
-              <option key={n} value={n} className="bg-neutral-900">
+              <option
+                key={n}
+                value={n}
+                className="bg-white dark:bg-neutral-900"
+              >
                 {n}
               </option>
             ))}
@@ -54,7 +58,7 @@ export default function ReservationForm() {
         </label>
 
         {/* Datum */}
-        <label className="flex-1 inline-flex items-center gap-2 border-2 border-gray-200 px-3 py-2">
+        <label className="flex-1 inline-flex items-center gap-2 border-2 border-gray-700 dark:border-gray-200 px-3 py-2">
           <span className="text-neutral-400">📅</span>
           <input
             type="date"
@@ -65,7 +69,7 @@ export default function ReservationForm() {
         </label>
 
         {/* Čas */}
-        <label className="flex-1 inline-flex items-center gap-2 border-2 border-gray-200 px-3 py-2">
+        <label className="flex-1 inline-flex items-center gap-2 border-2 border-gray-700 dark:border-gray-200 px-3 py-2">
           <span className="text-neutral-400">⏰</span>
           <select
             name="time"
@@ -73,11 +77,15 @@ export default function ReservationForm() {
             className="w-full bg-transparent outline-none"
             aria-label="Čas"
           >
-            <option value="" disabled className="bg-neutral-900">
+            <option value="" disabled className="bg-white dark:bg-neutral-900">
               Vyberte čas
             </option>
             {TIMES.map((t) => (
-              <option key={t} value={t} className="bg-neutral-900">
+              <option
+                key={t}
+                value={t}
+                className="bg-white dark:bg-neutral-900"
+              >
                 {t}
               </option>
             ))}
@@ -89,7 +97,7 @@ export default function ReservationForm() {
       <input
         name="name"
         placeholder="Vaše jméno"
-        className="w-full border-2 border-gray-200 px-3 py-2 bg-transparent placeholder-neutral-400 outline-none"
+        className="w-full border-2 border-gray-700 dark:border-gray-200 px-3 py-2 bg-transparent placeholder-neutral-400 outline-none"
       />
 
       {/* Email */}
@@ -97,7 +105,7 @@ export default function ReservationForm() {
         type="email"
         name="email"
         placeholder="Váš email"
-        className="w-full border-2 border-gray-200 px-3 py-2 bg-transparent placeholder-neutral-400 outline-none"
+        className="w-full border-2 border-gray-700 dark:border-gray-200 px-3 py-2 bg-transparent placeholder-neutral-400 outline-none"
       />
 
       {/* Poznámka */}
@@ -105,13 +113,13 @@ export default function ReservationForm() {
         name="note"
         placeholder="Poznámka"
         rows={5}
-        className="w-full border-2 border-gray-200 px-3 py-2 bg-transparent placeholder-neutral-400 outline-none"
+        className="w-full border-2 border-gray-700 dark:border-gray-200 px-3 py-2 bg-transparent placeholder-neutral-400 outline-none"
       />
 
       <div className="pt-2 flex items-center gap-3">
         <button
           type="button"
-          className="rounded-full border border-red-600 bg-red-600/20 hover:bg-red-600/40 text-red-200 px-5 py-2 transition"
+          className="inline-block rounded-full border border-accent bg-accent text-white hover:bg-accent/90 px-4 py-2 text-sm font-bold"
         >
           Odeslat rezervaci
         </button>

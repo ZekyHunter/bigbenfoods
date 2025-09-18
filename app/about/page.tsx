@@ -19,8 +19,10 @@ export default function AboutPage() {
     <Container>
       {/* Úvod */}
       <section className="py-10">
-        <h1 className="text-3xl md:text-4xl font-serif tracking-wide">O nás</h1>
-        <p className="mt-3 text-neutral-300 max-w-2xl">
+        <h1 className="text-3xl md:text-2xl tracking-wide text-neutral-900 dark:text-neutral-300 font-lato mb-4">
+          O nás
+        </h1>
+        <p className="mt-3 text-neutral-700 dark:text-neutral-300 font-lato max-w-2xl">
           Big Ben Foods sLorem Ipsum is simply dummy text of the printing and
           typesetting industry. Vinohrady, Nitrianská 1625/22.
         </p>
@@ -31,7 +33,7 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div>
             <h2 className="text-xl font-serif tracking-wide">Our philosophy</h2>
-            <p className="mt-2 text-neutral-300">
+            <p className="mt-2 text-neutral-700 dark:text-neutral-300 font-lato">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
@@ -39,7 +41,7 @@ export default function AboutPage() {
 
           <div>
             <h2 className="text-lg font-serif tracking-wide">Suroviny atd.</h2>
-            <p className="mt-2 text-neutral-300">
+            <p className="mt-2 text-neutral-700 dark:text-neutral-300 font-lato">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum is simply dummy text of the
@@ -51,7 +53,7 @@ export default function AboutPage() {
 
           <div>
             <h2 className="text-lg font-serif tracking-wide">Náš tým</h2>
-            <p className="mt-2 text-neutral-300">
+            <p className="mt-2 text-neutral-700 dark:text-neutral-300 font-lato">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
@@ -72,7 +74,7 @@ export default function AboutPage() {
       {/* Milníky */}
       <section className="mt-12">
         <h2 className="text-xl font-serif tracking-wide mb-4">Milníky</h2>
-        <ol className="space-y-3 text-neutral-300">
+        <ol className="space-y-3 text-neutral-700 dark:text-neutral-300 font-lato">
           <li>
             <span className="text-neutral-400">2018 —</span> Otevření na
             Vinohradech
@@ -90,7 +92,9 @@ export default function AboutPage() {
 
       {/* Galerie lightbox/ možná nějaký carousel? */}
       <section className="mt-12">
-        <h2 className="text-xl font-serif tracking-wide mb-4">Galerie</h2>
+        <h2 className="text-3xl md:text-2xl tracking-wide text-neutral-900 dark:text-neutral-300 font-lato mb-4">
+          Galerie
+        </h2>
         <LightboxGallery images={GALLERY} />
       </section>
 
@@ -98,9 +102,9 @@ export default function AboutPage() {
       <section className="mt-12 pb-6">
         <Link
           href="/reservation"
-          className="inline-block rounded-full border border-red-600 bg-red-600/20 hover:bg-red-600/40 text-red-200 px-6 py-2 transition"
+          className="inline-block rounded-full border border-accent bg-accent text-white hover:bg-accent/90 px-4 py-2 text-sm font-bold"
         >
-          Rezervovat stůl
+          REZERVOVAT STŮL
         </Link>
       </section>
     </Container>

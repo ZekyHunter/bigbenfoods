@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-red-900">
-      <div className="h-[2px] bg-red-800/60" />
+    <footer className="mt-16 border-t border-red-700 bg-red-700/10 dark:bg-neutral-800/50">
+      <div className="h-[2px] bg-red-600/60" />
       <Container>
         <div className="py-12 grid gap-10 md:grid-cols-4 text-sm">
           <div>
-            <h3 className="font-semibold mb-3">Big Ben Foods</h3>
-            <address className="not-italic leading-6 text-neutral-400">
+            <h3 className="font-semibold mb-3 font-lato">Big Ben Foods</h3>
+            <address className="not-italic leading-6 text-neutral-600 dark:text-neutral-300 font-lato">
               {site.addressLine}
               <div className="mt-2">
                 <a className="hover:text-red-400" href={`mailto:${site.email}`}>
@@ -22,8 +22,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">Otevírací doba</h3>
-            <ul className="text-neutral-400 space-y-[2px]">
+            <h3 className="font-semibold mb-3 font-lato">Otevírací doba</h3>
+            <ul className="text-neutral-600 dark:text-neutral-300 font-lato space-y-[2px]">
               {hours.map((h) => (
                 <li key={h.label} className="flex justify-between gap-3">
                   <span>{h.label}</span>
@@ -34,8 +34,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">Sociální sítě</h3>
-            <ul className="text-neutral-400 space-y-1">
+            <h3 className="font-semibold mb-3 font-lato">Sociální sítě</h3>
+            <ul className="text-neutral-600 dark:text-neutral-300 font-lato space-y-1">
               {site.social?.facebook && (
                 <li>
                   <Link
@@ -60,8 +60,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">Provozovatel</h3>
-            <ul className="text-neutral-400 leading-6">
+            <h3 className="font-semibold mb-3 font-lato">Provozovatel</h3>
+            <ul className="leading-6 text-neutral-600 dark:text-neutral-300 font-lato">
               <li>{site.company.name}</li>
               <li>{site.addressLine}</li>
               <li>IČO {site.company.ico}</li>
@@ -80,7 +80,7 @@ export function Footer() {
               src="https://www.openstreetmap.org/export/embed.html?bbox=14.4414,50.0718,14.4448,50.0743&layer=mapnik&marker=50.07305,14.4431"
             />
           </div>
-          <p className="mt-2 text-xs text-neutral-400">
+          <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-300 font-lato">
             Nitrianská 1625/22, Vinohrady, Praha 3, 130 00
           </p>
         </div>

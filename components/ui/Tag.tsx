@@ -15,10 +15,10 @@ export default function Tag({
       type="button"
       onClick={onClick}
       className={[
-        "rounded-full px-3 py-1 text-sm transition",
-        "border",
+        "rounded-full px-3 py-1 text-md transition font-semibold font-lato",
+        "border-2",
         active
-          ? "border-red-500 text-red-300 bg-red-900/20"
+          ? "border-red-500 text-red-800 bg-red-700/20"
           : "border-neutral-700 hover:border-red-600",
       ].join(" ")}
     >

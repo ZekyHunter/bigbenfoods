@@ -7,12 +7,14 @@ export default function ReservationPage() {
       <div className="grid md:grid-cols-2 gap-10 py-10">
         {/* Levý sloupec – info + formulář */}
         <div>
-          <h1 className="text-3xl font-serif tracking-wide mb-4">
+          <h1 className="text-xl font-lato font-semibold tracking-wide text-neutral-900 dark:text-neutral-300 pb-4">
             BIG BEN FOODS
           </h1>
 
-          <div className="text-sm text-neutral-400 leading-relaxed mb-6">
-            <p className="uppercase text-neutral-300 mb-2">Otevírací doba:</p>
+          <div className="text-neutral-700 dark:text-neutral-300 font-lato leading-6 text-sm pb-4">
+            <p className="font-semibold mb-1 text-neutral-900 dark:text-neutral-300 font-lato">
+              Otevírací doba:
+            </p>
             <p>pondělí–středa 11:30–23:00</p>
             <p>čtvrtek–pátek 11:30–24:00</p>
             <p>sobota 12:00–24:00</p>
