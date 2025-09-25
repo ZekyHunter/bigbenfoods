@@ -21,8 +21,8 @@ export default function ContactPage() {
         {/* Levý sloupec – kontakty */}
         <section className="space-y-6">
           <div>
-            <h2 className="text-xl font-lato font-semibold tracking-wide text-neutral-900 dark:text-neutral-300">
-              Big Ben Foods
+            <h2 className="uppercase dark:text-neutral-300 font-serif text-xl tracking-wide text-foreground">
+              <span className="text-accent font-black">BIG</span> Ben Foods
             </h2>
             <address className="not-italic mt-2 text-neutral-700 dark:text-neutral-300 font-lato leading-6 text-sm">
               Nitrianská 1625/22

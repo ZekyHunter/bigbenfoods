@@ -7,9 +7,9 @@ export default function ReservationPage() {
       <div className="grid md:grid-cols-2 gap-10 py-10">
         {/* Levý sloupec – info + formulář */}
         <div>
-          <h1 className="text-xl font-lato font-semibold tracking-wide text-neutral-900 dark:text-neutral-300 pb-4">
-            BIG BEN FOODS
-          </h1>
+          <h2 className="uppercase dark:text-neutral-300 font-serif text-xl tracking-wide text-foreground pb-2">
+            <span className="text-accent font-black">BIG</span> Ben Foods
+          </h2>
 
           <div className="text-neutral-700 dark:text-neutral-300 font-lato leading-6 text-sm pb-4">
             <p className="font-semibold mb-1 text-neutral-900 dark:text-neutral-300 font-lato">

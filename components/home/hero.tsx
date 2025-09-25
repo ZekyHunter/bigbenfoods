@@ -20,9 +20,9 @@ export default function Hero() {
                 <p className="text-[10px] md:text-xs tracking-[.25em] text-red-400 uppercase">
                   Welcome at
                 </p>
-                <h1 className="mt-1 text-xl md:text-2xl font-serif">
-                  Big Ben Foods
-                </h1>
+                <h2 className="uppercase dark:text-neutral-300 font-serif text-xl tracking-wide text-foreground pt-2">
+                  <span className="text-accent font-black">BIG</span> Ben Foods
+                </h2>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function Hero() {
           <p className="mt-2 text-center">
             <a
               href="/menu"
-              className="inline-block text-red-400 underline underline-offset-4 hover:text-red-600"
+              className="inline-block text-red-400 underline underline-offset-4 hover:text-red-600 font-lato"
             >
               See the Menu
             </a>
